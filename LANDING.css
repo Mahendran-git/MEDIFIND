@@ -1,0 +1,226 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f5f3;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.logo-img {
+    width: 120px;  /* Adjust width as needed */
+    height: auto;
+    margin-right: 80px; /* Space between logo and text */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d9534f;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('https://img.freepik.com/free-photo/blood-test-tubes-beige-surface_53876-94995.jpg?t=st=1738670571~exp=1738674171~hmac=ca610a5570b086b9e2f20c9180f3b7b0d2ed3ff1d4e8e901d151f6b1334c16dd&w=900') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn, .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #d9534f;
+}
+
+.signup-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.signup-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Why Medifind Section */
+.why-medifind {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.why-medifind h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.why-medifind h2 span {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature i {
+    font-size: 24px;
+    color: #d9534f;
+    margin-right: 15px;
+}
+
+.feature p {
+    font-size: 16px;
+    flex: 1;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d9534f;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .features {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .feature {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .overlay h1 {
+        font-size: 22px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
